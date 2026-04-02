@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+}
+
+.main-section {
+    margin-left: 0;
+    /* margin-top: 175px; */
+    position: fixed;
+    top: 30%;
+}
+
+.main-section-head-photo > img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main-section-head {
+    display: flex;
+    align-items: center;
+}
+
+.main-section-head-info > div {
+    margin-left: 27px;
+}
+
+.main-section-head-info-title > h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.main-section-head-info-title {
+    margin-top: 0px;
+}
+
+.main-section-head-info-icons > a {
+    text-decoration: none;
+}
+
+.main-section-head-info-icons > a > img {
+    color: black;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.main-section-head-info-job {
+    font-size: 20px;
+}
+
+.main-section-head-info-job > h2 {
+    font-weight: 400;
+    color: rgb(138, 138, 138);
+    margin-top: 0;
+}
+
+.main-section-head-info-icons {
+    margin-top: 12px;
+}
+
+.main-section-head-info-icons > a > img{
+    margin-top: 0;
+}
+
+.main-section-info {
+    font-size: 20px;
+    margin-top: 25px;
+    color: rgb(88, 88, 88);
+}
+
+.main-section-buttons {
+    margin-top: 20px;
+}
+
+.main-section-buttons a {
+    text-decoration: none;
+}
+
+.read-blog,
+.about-me {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-blog > a,
+.about-me > a {
+    text-decoration: none;
+}
+
+.read-blog > a {
+    color: white;
+}
+
+.about-me > a {
+    color: #1e90ff;
+}
+
+.read-blog {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(180, 180, 180);
+}
+
+.about-me {
+    color: #1e90ff;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1e90ff;
+}
+
+.footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+    .main-section {
+        position: relative;
+        top: 0;
+        padding-top: 150px;
+    }
+
+    .main-section-head {
+        align-items: center;
+    }
+
+    .main-section-head-photo > img {
+        width: 120px;
+    }
+
+    .main-section-head-info-title > h1 {
+        font-size: 32px;
+    }
+
+    .main-section-info {
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+    .main-section {
+        padding: 0 12px;
+        padding-top: 100px;
+    }
+
+    .main-section-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-section-head-info > div {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .main-section-head-photo > img {
+        width: 100px;
+    }
+
+    .main-section-head-info-title > h1 {
+        font-size: 26px;
+    }
+
+    .main-section-head-info-job {
+        font-size: 16px;
+    }
+
+    .main-section-info {
+        font-size: 16px;
+    }
+
+    .main-section-buttons {
+        justify-content: center;
+    }
+
+    .read-blog,
+    .about-me {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Asosiy blok - darrov ko'rinadi */
+.main-section {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Rasm biroz kechikib chiqadi */
+.main-section-head-photo {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+/* Sarlavha va ma'lumotlar */
+.main-section-head-info {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+/* Tugmalar eng oxirida chiqadi */
+.main-section-buttons {
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+
